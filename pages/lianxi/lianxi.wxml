@@ -1,0 +1,18 @@
+<!--pages/lianxi/lianxi.wxml-->
+<view class="index container">
+  <view class="index-hd">
+    <view class="index-desc" style="margin-bottom:100rpx;">点击下方图标与客服联系</view>
+    <!--<button open-type="contact" bindcontact="handleContact">联系</button>-->
+    <contact-button size="40" session-from="weapp"></contact-button>
+    <view class="index-desc" style="margin-bottom:100rpx;">欢迎提出您的宝贵意见，我们将及时给予回复</view>
+    <view class="page-body-info">
+        <view class="page-body-title">网络状态</view>
+        <block wx:if="{{isConnected === false}}">
+          <text class="page-body-text">没有网络连接</text>
+        </block>
+        <block wx:if="{{isConnected === true}}">
+          <text class="page-body-text-network-type">{{networkType}}</text>
+        </block>
+      </view>
+  </view>
+</view>

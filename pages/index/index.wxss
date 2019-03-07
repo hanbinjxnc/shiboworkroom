@@ -1,0 +1,4 @@
+/* pages/index/index.wxss */
+@import "../common/index.wxss";
+
+.image_qr{width: 258px; height: 258px;}

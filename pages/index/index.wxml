@@ -1,0 +1,9 @@
+<!--pages/index/index.wxml-->
+<view class="index container">
+  <view class="index-hd">
+    <view class="index-desc">扫描下方二维码关注视博工作室公众号</view>
+    <view class="index-desc">搜索gzwebweb关注公众号</view>
+    <image class="image_qr" src="../../image/qr_shiboworkroom.jpg" bindtap='viewImage'></image>
+    <view class="index-desc">点击二维码进行多张图片预览</view>
+  </view>
+</view>
